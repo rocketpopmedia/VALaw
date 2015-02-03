@@ -1,0 +1,1018 @@
+/* -- CSS RESET -- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*----------------------------------variables---------------------------------*/
+/*----------------------------------variables---------------------------------*/
+/*----------------------------------miscellaneous---------------------------------*/
+p {
+  font-size: 1.25em;
+  line-height: 1.85em;
+  font-family: "lexia", serif;
+  font-weight: 300;
+  color: gray;
+}
+
+h1 {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  color: gray;
+  font-family: "lexia", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.25em;
+  color: white;
+  font-family: "lexia", serif;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1em;
+  line-height: 1.25em;
+  color: gray;
+  font-family: "brandon-grotesque", sans-serif;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  color: gray;
+  font-family: "lexia", serif;
+  font-weight: 400;
+}
+
+hr {
+  height: 2px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 50px;
+  background-color: #ccdee1;
+  border: none;
+}
+
+/*----------------------------------miscellaneous end---------------------------------*/
+/*-----------------large nav large----------------*/
+nav {
+  width: 100%;
+  height: 200px;
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 400;
+  background-color: #dbe7e9;
+}
+nav .navcenter {
+  width: 1200px;
+  height: 200px;
+  margin: 0 auto 0 auto;
+  box-sizing: border-box;
+}
+nav .navcenter .navleft {
+  width: 450px;
+  height: 200px;
+  box-sizing: border-box;
+  margin: 0;
+  float: left;
+  background-image: url(images/logorhd.png);
+  background-size: 440px 120px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: background-image 0.5s ease;
+}
+nav .navcenter .navleft:hover {
+  background-image: url(images/logo-hover.png);
+}
+nav .navcenter .navleft a {
+  width: 450px;
+  height: 200px;
+  display: block;
+}
+nav .navcenter .navrightcontact {
+  width: 750px;
+  height: 100px;
+  margin: 0;
+  box-sizing: border-box;
+  float: left;
+}
+nav .navcenter .navrightcontact .contact {
+  float: right;
+  margin-left: 10px;
+  color: gray;
+  margin-top: 50px;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/contact.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+nav .navcenter .navrightcontact .contact:hover {
+  background-image: url("images/contact-hover.svg");
+}
+nav .navcenter .navrightcontact .facebook {
+  float: right;
+  color: gray;
+  margin-top: 50px;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/circle-fb.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+nav .navcenter .navrightcontact .facebook:hover {
+  background-image: url("images/circle-fb-hover.svg");
+}
+nav .navcenter .navrightlist {
+  width: 750px;
+  height: 100px;
+  margin: 0;
+  box-sizing: border-box;
+  float: left;
+}
+nav .navcenter .navrightlist ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+nav .navcenter .navrightlist ul li {
+  float: left;
+}
+nav .navcenter .navrightlist ul li a {
+  text-decoration: none;
+  margin-left: 45px;
+  display: block;
+  line-height: 80px;
+  text-align: right;
+  font-size: 20px;
+  color: gray;
+  font-family: "lexia", serif;
+  font-weight: 400;
+}
+nav .navcenter .navrightlist ul li a:hover {
+  color: #a2a2a2;
+}
+
+.mediumnav {
+  display: none;
+}
+
+/*-----------------large nav end large----------------*/
+/*----------------- index page large----------------*/
+.bigphoto {
+  width: 100%;
+  height: calc(100vh - 200px);
+  background-image: url(images/big.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: left;
+}
+.bigphoto .textoverlay {
+  margin: 250px auto 0 auto;
+  height: 300px;
+  width: 600px;
+}
+.bigphoto .textoverlay .text {
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: auto;
+}
+
+.info {
+  background-color: #ccdee1;
+  width: 100%;
+  height: auto;
+  clear: both;
+}
+.info .bottomlogowrap {
+  width: 50%;
+  height: 200px;
+  float: left;
+  background-color: #ccdee1;
+}
+.info .bottomlogowrap .bottomlogo {
+  width: 300px;
+  height: 150px;
+  margin-right: 15%;
+  margin-top: 50px;
+  float: right;
+  background-image: url(images/bottomlogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #ccdee1;
+  box-sizing: border-box;
+}
+.info .bottomphonenumbers {
+  text-align: left;
+  width: 50%;
+  float: left;
+  height: 200px;
+  background-color: #ccdee1;
+  padding-top: 50px;
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+
+/*----------------- index page end large ----------------*/
+/*----------------- about page large ----------------*/
+.about {
+  height: auto;
+  width: 100%;
+  background-image: url("images/paper.png");
+  background-repeat: repeat;
+  display: block;
+}
+.about .copy {
+  height: auto;
+  width: 1200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.about .copy .topimage {
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+  margin: 0 auto 50px auto;
+}
+
+/*
+	.about{
+		width:1200px;
+		height:auto;
+		margin:0 auto 0 auto;
+		padding-top:50px;
+		box-sizing:border-box;
+		.left{
+			width:40%;
+			height:auto;
+			float:left;
+			padding-right:5%;
+			box-sizing:border-box;
+			.featured{
+				width:100%;
+				height:350px;
+				margin-bottom:50px;
+			}
+		}	
+		.right{
+			width:60%;
+			float:left;
+			.postcontent{
+				width:100%;
+				height:auto;
+				.content{
+					padding-top:25px;
+				}
+			}
+		}
+	}
+*/
+.areasofpractice {
+  width: 100%;
+  height: auto;
+  background-color: #dbe7e9;
+  padding-top: 50px;
+  clear: both;
+}
+.areasofpractice .areasofpracticetitle {
+  text-align: center;
+  padding-bottom: 25px;
+  width: 100%;
+  height: auto;
+  background-color: #dbe7e9;
+}
+.areasofpractice .workerscompensation {
+  text-align: center;
+  width: 20%;
+  padding-left: 15%;
+  padding-right: 5%;
+  height: auto;
+  float: left;
+  background-color: #dbe7e9;
+  padding-bottom: 50px;
+}
+.areasofpractice .workerscompensation h3 {
+  padding-top: 25px;
+  background-color: #dbe7e9;
+}
+.areasofpractice .socialsecuritydisability {
+  text-align: center;
+  width: 20%;
+  height: auto;
+  float: left;
+  background-color: #dbe7e9;
+  padding-bottom: 50px;
+}
+.areasofpractice .socialsecuritydisability h3 {
+  padding-top: 25px;
+  background-color: #dbe7e9;
+}
+.areasofpractice .personalinjury {
+  text-align: center;
+  width: 20%;
+  padding-left: 5%;
+  padding-right: 15%;
+  margin: auto;
+  float: left;
+  background-color: #dbe7e9;
+  padding-bottom: 50px;
+}
+.areasofpractice .personalinjury h3 {
+  padding-top: 25px;
+  background-color: #dbe7e9;
+}
+
+.bottomimage {
+  height: 600px;
+  width: 100%;
+  background-image: url(images/big.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: left;
+  display: block;
+}
+.bottomimage .bottomimagetext {
+  margin-top: 250px;
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 40%;
+  text-align: center;
+}
+
+.interiorpage {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  float: left;
+}
+.interiorpage .left {
+  width: 50%;
+  box-sizing: border-box;
+  height: auto;
+  float: left;
+  padding-left: 10%;
+  padding-right: 5%;
+  position: fixed;
+}
+.interiorpage .left .featured {
+  width: 100%;
+  height: 500px;
+}
+.interiorpage .right {
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 15%;
+  float: right;
+  height: auto;
+  position: relative;
+  min-height: 700px;
+}
+.interiorpage .right .postcontent {
+  width: 100%;
+  height: auto;
+}
+.interiorpage .right .postcontent .content {
+  padding-top: 25px;
+}
+
+/*----------------- about page large end ----------------*/
+/*----------------- team page large ----------------*/
+.topimageteam {
+  height: 300px;
+  width: 100%;
+  background-image: url(images/lawyers.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: left;
+  display: block;
+}
+
+.team {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding-top: 50px;
+  float: left;
+}
+.team .left {
+  width: 50%;
+  box-sizing: border-box;
+  height: auto;
+  float: left;
+  padding-left: 10%;
+  padding-right: 5%;
+  margin-bottom: 50px;
+}
+.team .left .featured {
+  width: 100%;
+  height: 500px;
+}
+.team .left .emailbutton {
+  width: 100%;
+  margin-top: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #bd1e2c;
+}
+.team .left .emailbutton a {
+  color: white;
+  font-family: "lexia", serif;
+}
+.team .left .emailbutton:hover {
+  background-color: #ccdee1;
+}
+.team .right {
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 15%;
+  float: left;
+  margin-bottom: 50px;
+}
+.team .right .postcontent {
+  width: 100%;
+  height: auto;
+}
+.team .right .postcontent .content {
+  padding-top: 25px;
+}
+
+.offices {
+  height: auto;
+  width: 100%;
+  background-color: #f3f6f7;
+  display: block;
+  float: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.offices .officestitle {
+  padding-bottom: 50px;
+}
+.offices .fredericksburg {
+  padding-right: 10%;
+  width: 50%;
+  box-sizing: border-box;
+  height: auto;
+  float: left;
+}
+.offices .richmond {
+  padding-left: 10%;
+  width: 50%;
+  box-sizing: border-box;
+  height: auto;
+  float: left;
+}
+
+/*----------------- team page large end ----------------*/
+/*----------------- results page large ----------------*/
+.results {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding-top: 50px;
+  float: left;
+}
+.results .left {
+  width: 50%;
+  box-sizing: border-box;
+  height: auto;
+  float: left;
+  padding-left: 10%;
+  padding-right: 5%;
+}
+.results .left .featured {
+  width: 100%;
+  height: 500px;
+}
+.results .left .readmorebutton {
+  width: 100%;
+  margin-top: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: #ccdee1;
+}
+.results .left .readmorebutton a {
+  color: white;
+  font-family: "lexia", serif;
+}
+.results .left .readmorebutton:hover {
+  background-color: #bd1e2c;
+}
+.results .right {
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 15%;
+  float: left;
+  margin-bottom: 50px;
+}
+.results .right .postcontent {
+  width: 100%;
+  height: auto;
+}
+.results .right .postcontent .content {
+  padding-top: 25px;
+}
+
+.awards {
+  height: auto;
+  width: 100%;
+  background-color: #f3f6f7;
+  float: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box;
+}
+.awards .awardsheader {
+  text-align: center;
+}
+.awards .individualaward {
+  text-align: center;
+  width: 20%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  float: left;
+  padding-top: 50px;
+}
+.awards .individualaward h3:hover {
+  color: #bd1e2c;
+}
+
+/*----------------- results page large end----------------*/
+/*----------------- news page large ----------------*/
+.news {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  float: left;
+}
+.news .left {
+  width: 50%;
+  box-sizing: border-box;
+  height: auto;
+  float: left;
+  padding-left: 10%;
+  padding-right: 5%;
+  margin-bottom: 50px;
+}
+.news .left .featured {
+  width: 100%;
+  height: 500px;
+}
+.news .left .readmorebutton {
+  width: 100%;
+  margin-top: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #bd1e2c;
+}
+.news .left .readmorebutton a {
+  color: white;
+  font-family: "lexia", serif;
+}
+.news .left .readmorebutton:hover {
+  background-color: #ccdee1;
+}
+.news .right {
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 15%;
+  float: left;
+  margin-bottom: 50px;
+  height: 600px;
+  position: relative;
+}
+.news .right .postcontent {
+  width: 100%;
+  height: auto;
+}
+.news .right .content {
+  padding-top: 50px;
+}
+
+/*----------------- news page large end ----------------*/
+/*-----------------resources page large----------------*/
+.resources {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+}
+.resources .leftresources {
+  width: 50%;
+  height: auto;
+  position: fixed;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-left: 10%;
+  padding-right: 5%;
+}
+.resources .rightresources {
+  width: 50%;
+  box-sizing: border-box;
+  float: right;
+  height: auto;
+  min-height: 500px;
+  padding-top: 80px;
+  padding-right: 15%;
+  padding-bottom: 50px;
+}
+.resources .rightresources h4 {
+  padding-top: 50px;
+}
+.resources .rightresources .resourcesbutton {
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #ccdee1;
+}
+.resources .rightresources .resourcesbutton a {
+  color: white;
+  font-family: "lexia", serif;
+}
+.resources .rightresources .resourcesbutton:hover {
+  background-color: #bd1e2c;
+}
+.resources .contentresources {
+  margin-top: 50px;
+}
+
+/*-----------------resources page large end ----------------*/
+/*-----------------contact page large----------------*/
+.contact {
+  height: auto;
+  width: 100%;
+}
+.contact .richmond {
+  height: auto;
+  min-height: 400px;
+  width: 100%;
+  background-color: #eff4f5;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 30%;
+  padding-right: 30%;
+  box-sizing: border-box;
+}
+.contact .richmond h1 {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.contact .richmond .left {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  height: auto;
+  background-color: #eff4f5;
+  padding-left: 10%;
+}
+.contact .richmond .right {
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 10%;
+  float: left;
+  height: auto;
+  background-color: #eff4f5;
+}
+.contact .richmond .emailbutton {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #bd1e2c;
+  float: left;
+  margin-bottom: 50px;
+}
+.contact .richmond .emailbutton a {
+  color: white;
+  font-family: "lexia", serif;
+}
+.contact .richmond .emailbutton:hover {
+  background-color: #ccdee1;
+}
+.contact .map-container-richmond {
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.contact .map-container-richmond #map-canvas-richmond {
+  height: 500px;
+  width: 100%;
+}
+.contact .fredericksburg {
+  height: auto;
+  min-height: 400px;
+  width: 100%;
+  background-color: #eff4f5;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 30%;
+  padding-right: 30%;
+  box-sizing: border-box;
+}
+.contact .fredericksburg h1 {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.contact .fredericksburg .left {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  height: auto;
+  background-color: #eff4f5;
+  padding-left: 10%;
+}
+.contact .fredericksburg .right {
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 10%;
+  float: left;
+  height: auto;
+  background-color: #eff4f5;
+}
+.contact .fredericksburg .emailbutton {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #bd1e2c;
+  float: left;
+  margin-bottom: 50px;
+}
+.contact .fredericksburg .emailbutton a {
+  color: white;
+  font-family: "lexia", serif;
+}
+.contact .fredericksburg .emailbutton:hover {
+  background-color: #ccdee1;
+}
+.contact .map-container-fredericksburg {
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.contact .map-container-fredericksburg #map-canvas-fredericksburg {
+  height: 500px;
+  width: 100%;
+}
+
+/*-----------------contact page large end ----------------*/
+/*----------------- footer large ----------------*/
+.foot .copyright {
+  height: 100px;
+  width: 100%;
+  display: block;
+  clear: both;
+  text-align: center;
+  background-color: #252160;
+  line-height: 100px;
+}
+
+/*----------------- footer end large----------------*/
+/*--------------------------------- Media Query below 1250px -------------------------------*/
+@media all and (max-width: 1250px) {
+  nav {
+    display: none;
+  }
+
+  .mediumnav {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: block;
+  }
+  .mediumnav #logohomemedium {
+    width: 100%;
+    height: 100px;
+    display: block;
+    background-color: #eff4f5;
+    float: left;
+    background-image: url(images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .mediumnav .alltext {
+    height: 50px;
+    width: 100%;
+    background-color: #ccdee1;
+    float: left;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .mediumnav .alltext ul {
+    list-style: none;
+  }
+  .mediumnav .alltext ul li {
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px;
+  }
+  .mediumnav .alltext ul li a {
+    color: gray;
+    text-decoration: none;
+  }
+  .mediumnav .alltext ul li a:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+@media all and (max-width: 750px) {
+  .relativenav {
+    display: none;
+  }
+
+  .mediumnav {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: block;
+  }
+  .mediumnav #logohomemedium {
+    width: 100%;
+    height: 100px;
+    display: block;
+    background-color: #eff4f5;
+    float: left;
+    background-image: url(images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .mediumnav .alltext {
+    height: 50px;
+    width: 100%;
+    background-color: #ccdee1;
+    float: left;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: .75em;
+  }
+  .mediumnav .alltext ul {
+    list-style: none;
+  }
+  .mediumnav .alltext ul li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+  }
+  .mediumnav .alltext ul li a {
+    color: gray;
+    text-decoration: none;
+  }
+  .mediumnav .alltext ul li a:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+@media all and (max-width: 500px) {
+  .relativenav {
+    display: none;
+  }
+
+  .mediumnav {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: block;
+  }
+  .mediumnav #logohomemedium {
+    width: 100%;
+    height: 100px;
+    display: block;
+    background-color: #eff4f5;
+    float: left;
+    background-image: url(images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .mediumnav .alltext {
+    height: 50px;
+    width: 100%;
+    background-color: #ccdee1;
+    float: left;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: .5em;
+  }
+  .mediumnav .alltext ul {
+    list-style: none;
+  }
+  .mediumnav .alltext ul li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+  }
+  .mediumnav .alltext ul li a {
+    color: gray;
+    text-decoration: none;
+  }
+  .mediumnav .alltext ul li a:hover {
+    color: white;
+    text-decoration: none;
+  }
+}

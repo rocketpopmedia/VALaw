@@ -1,0 +1,1518 @@
+/* -- CSS RESET -- */
+/* line 15, ../sass/styles.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../sass/styles.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 30, ../sass/styles.scss */
+body {
+  line-height: 1;
+  background-image: url("images/paper.png");
+  background-repeat: repeat;
+}
+
+/* line 35, ../sass/styles.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 38, ../sass/styles.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 42, ../sass/styles.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 46, ../sass/styles.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*----------------------------------variables---------------------------------*/
+/*----------------------------------variables---------------------------------*/
+/*----------------------------------miscellaneous---------------------------------*/
+/* line 65, ../sass/styles.scss */
+h1 {
+  font-size: 20px;
+  line-height: 26px;
+  font-family: "lexia", serif;
+  font-weight: 400;
+  color: gray;
+}
+
+/* line 72, ../sass/styles.scss */
+h2 {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 400;
+  color: gray;
+  text-transform: uppercase;
+}
+
+/* line 80, ../sass/styles.scss */
+#button {
+  width: 100%;
+  margin-top: 10px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #282d52;
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-size: 18px;
+  font-family: "lexia", serif;
+  font-weight: 400;
+  text-style: italic;
+}
+/* line 94, ../sass/styles.scss */
+#button:hover {
+  background-color: #4c567a;
+}
+
+/* line 98, ../sass/styles.scss */
+a {
+  font-size: 20px;
+  font-family: "lexia", serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #282d52;
+}
+
+/* line 105, ../sass/styles.scss */
+p {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "lexia", serif;
+  font-weight: 300;
+  color: gray;
+}
+
+/* line 112, ../sass/styles.scss */
+hr {
+  height: 2px;
+  width: 100%;
+  background-color: #ccdee1;
+  border: none;
+  display: block;
+  clear: both;
+}
+
+/*----------------------------------miscellaneous end---------------------------------*/
+/*-----------------large nav large----------------*/
+/* line 123, ../sass/styles.scss */
+nav {
+  width: 100%;
+  height: 200px;
+  background-color: #dbe7e9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+/* line 131, ../sass/styles.scss */
+nav .navcenter {
+  width: 90%;
+  height: 200px;
+  margin: 0 auto 0 auto;
+  box-sizing: border-box;
+}
+
+
+
+/* line 136, ../sass/styles.scss */
+nav .navcenter .navleft {
+  width: 30%;
+  float: left;
+
+}
+/* line 144, ../sass/styles.scss */
+nav .navcenter .navleft a:hover {
+  background-image: url(images/logo-hover.svg);
+}
+/* line 147, ../sass/styles.scss */
+nav .navcenter .navleft a {
+    display: block;
+    height: 180px;
+    width: 100%;
+    background-image: url('images/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+/* line 153, ../sass/styles.scss */
+nav .navcenter .navrightcontact {
+  width: 70%;
+  height: 100px;
+  float: left;
+}
+/* line 157, ../sass/styles.scss */
+nav .navcenter .navrightcontact .contact {
+  float: right;
+  margin-left: 10px;
+  margin-top: 50px;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/contact-hover.svg") no-repeat center center cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* line 167, ../sass/styles.scss */
+nav .navcenter .navrightcontact .contact:hover {
+  background-image: url("images/contact.svg");
+}
+/* line 171, ../sass/styles.scss */
+nav .navcenter .navrightcontact .facebook {
+  float: right;
+  margin-left: 10px;
+  margin-top: 50px;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/circle-fb-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* line 181, ../sass/styles.scss */
+nav .navcenter .navrightcontact .facebook:hover {
+  background-image: url("images/circle-fb.svg");
+}
+/* line 185, ../sass/styles.scss */
+nav .navcenter .navrightcontact .spanish {
+  color: gray;
+  float: right;
+  margin-top: 60px;
+  margin-right: 15px;
+}
+/* line 192, ../sass/styles.scss */
+nav .navcenter .navrightlist {
+  width: 70%;
+  height: 100px;
+  margin: 0;
+  box-sizing: border-box;
+  float: left;
+}
+/* line 198, ../sass/styles.scss */
+nav .navcenter .navrightlist ul {
+  list-style-type: none;
+  float: right;
+  display: block;
+}
+/* line 202, ../sass/styles.scss */
+nav .navcenter .navrightlist ul li {
+  float: left;
+}
+/* line 204, ../sass/styles.scss */
+nav .navcenter .navrightlist ul li ul {
+  display: none;
+}
+/* line 205, ../sass/styles.scss */
+nav .navcenter .navrightlist ul li:hover ul {
+  list-style-type: none;
+  float: none;
+  display: block;
+  position: absolute;
+  top: 200px;
+  width: 300px;
+  height: auto;
+  background-color: #f3f6f7;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+/* line 217, ../sass/styles.scss */
+nav .navcenter .navrightlist ul li:hover ul li a {
+  text-decoration: none;
+  display: block;
+  line-height: 40px;
+  color: #282d52;
+  text-align: left;
+  width: 250px;
+}
+/* line 225, ../sass/styles.scss */
+nav .navcenter .navrightlist ul li:hover ul li a:hover {
+  color: #4c567a;
+}
+/* line 230, ../sass/styles.scss */
+nav .navcenter .navrightlist ul li a {
+  text-decoration: none;
+  margin-left: 40px;
+  display: block;
+  line-height: 100px;
+  text-align: right;
+  color: #282d52;
+}
+/* line 237, ../sass/styles.scss */
+nav .navcenter .navrightlist ul li a:hover {
+  color: #4c567a;
+}
+
+/* line 246, ../sass/styles.scss */
+.mediumnav {
+  display: none;
+}
+
+/*-----------------large nav end large----------------*/
+/*----------------- index page large----------------*/
+/* line 251, ../sass/styles.scss */
+.ms-bullet {
+  height: 12px !important;
+  width: 12px !important;
+  background-image: none !important;
+  background-color: white !important;
+  border-radius: 6px !important;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+}
+
+/* line 260, ../sass/styles.scss */
+.ms-bullet-selected {
+  height: 12px !important;
+  width: 12px !important;
+  background-image: none !important;
+  background-color: #282d52 !important;
+  border-radius: 6px !important;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+}
+
+/* line 270, ../sass/styles.scss */
+#textfrontpage {
+  text-align: center;
+  margin-top: 50% !important;
+  width: 100%;
+  height: 50%;
+  font-size: 24px !important;
+  line-height: 30px !important;
+  font-family: "lexia", serif !important;
+  font-weight: 400 !important;
+  color: gray !important;
+}
+
+/* line 283, ../sass/styles.scss */
+.front {
+  height: 100vh;
+  width: 100%;
+  display: block;
+}
+
+/* line 288, ../sass/styles.scss */
+.bigphoto {
+  margin-top: 200px;
+  width: 100%;
+  height: calc(100vh - 200px);
+  background-image: url(images/construction-lighter.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: left;
+}
+/* line 297, ../sass/styles.scss */
+.bigphoto .textoverlay {
+  margin: 15% auto 0 auto;
+  height: 300px;
+  width: 600px;
+}
+/* line 302, ../sass/styles.scss */
+.bigphoto .text {
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: auto;
+}
+/* line 308, ../sass/styles.scss */
+.bigphoto .text h1 {
+  color: white !important;
+}
+
+/*----------------- index page end large ----------------*/
+/*----------------- about page large ----------------*/
+/* line 314, ../sass/styles.scss */
+.areasofpractice {
+  /* background-color: $lightblue; */
+  width: 80%;
+  margin: 50px auto 100px auto;
+  height: 450px;
+  box-sizing: border-box;
+  clear: both;
+}
+/* line 321, ../sass/styles.scss */
+.areasofpractice .areasofpracticetitle {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  color: gray;
+}
+/* line 329, ../sass/styles.scss */
+.areasofpractice .workerscompensation {
+  background-image: url(images/hat-blue.svg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16%;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 18%;
+  box-sizing: border-box;
+  margin-left: 16%;
+  margin-right: 5%;
+  color: #282d52;
+}
+/* line 344, ../sass/styles.scss */
+.areasofpractice .workerscompensation h2 {
+  color: #282d52;
+}
+/* line 345, ../sass/styles.scss */
+.areasofpractice .workerscompensation h2:hover {
+  color: gray;
+}
+/* line 348, ../sass/styles.scss */
+.areasofpractice .workerscompensation:hover {
+  color: gray;
+  background-image: url(images/hat-blue-hover.svg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* line 356, ../sass/styles.scss */
+.areasofpractice .disability {
+  background-image: url(images/walker-blue.svg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16%;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 18%;
+  box-sizing: border-box;
+  margin-left: 5%;
+  margin-right: 16%;
+  color: #282d52;
+}
+
+.practice-wrapper {
+	position: relative;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+	
+	
+}
+/* line 371, ../sass/styles.scss */
+.areasofpractice .disability h2 {
+  color: #282D52;
+}
+/* line 372, ../sass/styles.scss */
+.areasofpractice .disability h2:hover {
+  color: gray;
+}
+/* line 375, ../sass/styles.scss */
+.areasofpractice .disability:hover {
+  color: gray;
+  background-image: url(images/walker-blue-hover.svg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* line 383, ../sass/styles.scss */
+.areasofpractice .personalinjury {
+  background-image: url(images/car-blue.svg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16%;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 18%;
+  box-sizing: border-box;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #282d52;
+}
+/* line 398, ../sass/styles.scss */
+.areasofpractice .personalinjury h2 {
+  color: #282d52;
+}
+/* line 399, ../sass/styles.scss */
+.areasofpractice .personalinjury h2:hover {
+  color: gray;
+}
+/* line 402, ../sass/styles.scss */
+.areasofpractice .personalinjury:hover {
+  color: gray;
+  background-image: url(images/car-blue-hover.svg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*----------------- about page large end ----------------*/
+/*----------------- team page large ----------------*/
+/* line 413, ../sass/styles.scss */
+.doublewrap {
+  margin-top: 200px !important;
+  height: auto;
+  width: 100%;
+  display: block;
+}
+/* line 418, ../sass/styles.scss */
+.doublewrap .topimageteam {
+  height: calc(60vh);
+  width: 100%;
+  background-image: url("images/lawyers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: left;
+  display: block;
+}
+/* line 428, ../sass/styles.scss */
+.doublewrap .double {
+  width: 90%;
+  margin: 0 auto 0 auto;
+  height: auto;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+/* line 434, ../sass/styles.scss */
+.doublewrap .double #portrait {
+  width: 50%;
+  margin-top: 50px;
+  box-sizing: border-box;
+  height: auto;
+  float: left;
+  padding-right: 10%;
+  padding-left: 5%;
+  margin-bottom: 50px;
+}
+/* line 443, ../sass/styles.scss */
+.doublewrap .double #portrait .featured {
+  width: 100%;
+  height: 400px;
+}
+/* line 448, ../sass/styles.scss */
+.doublewrap .double .left {
+  width: 50%;
+  padding-top: 50px;
+  box-sizing: border-box;
+  height: auto;
+  float: left;
+  padding-right: 5%;
+  margin-bottom: 50px;
+}
+
+.doublewrap .double .center {
+  width: 100%;
+  padding-top: 50px;
+  box-sizing: border-box;
+  height: auto;
+  float: left;
+  margin-bottom: 50px;
+}
+
+
+/* line 456, ../sass/styles.scss */
+.doublewrap .double .left .featured {
+  width: 100%;
+  height: 500px;
+}
+
+.doublewrap .double .center .featured {
+  width: 100%;
+  height: 600px;
+}
+
+/* line 461, ../sass/styles.scss */
+.doublewrap .double .right {
+  width: 50%;
+  margin-top: 50px;
+  box-sizing: border-box;
+  float: left;
+  margin-bottom: 50px;
+}
+/* line 467, ../sass/styles.scss */
+.doublewrap .double .right .postcontent {
+  width: 100%;
+  height: auto;
+}
+/* line 470, ../sass/styles.scss */
+.doublewrap .double .right .postcontent .content {
+  padding-top: 25px;
+}
+
+/* line 477, ../sass/styles.scss */
+.disclaimerwrap {
+  background-color: #eff4f5;
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  clear: both;
+}
+/* line 485, ../sass/styles.scss */
+.disclaimerwrap .disclaimer {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 492, ../sass/styles.scss */
+.offices {
+  margin-top: 200px;
+  height: auto;
+  width: 100%;
+  background-color: #f3f6f7;
+  display: block;
+  float: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* line 501, ../sass/styles.scss */
+.offices .officestitle {
+  padding-bottom: 50px;
+}
+/* line 504, ../sass/styles.scss */
+.offices .fredericksburg {
+  padding-right: 10%;
+  width: 50%;
+  box-sizing: border-box;
+  height: auto;
+  float: left;
+}
+/* line 511, ../sass/styles.scss */
+.offices .richmond {
+  padding-left: 10%;
+  width: 50%;
+  box-sizing: border-box;
+  height: auto;
+  float: left;
+}
+
+/*----------------- team page large end ----------------*/
+/*----------------- results page large ----------------*/
+/* line 521, ../sass/styles.scss */
+#resourcesleft {
+  width: 50%;
+  padding-right: 10%;
+  box-sizing: border-box;
+}
+
+/* line 526, ../sass/styles.scss */
+.results {
+  width: 100%;
+  margin-top: 200px;
+  height: auto;
+  background-color: white;
+  padding-top: 50px;
+  float: left;
+}
+/* line 533, ../sass/styles.scss */
+.results .left {
+  width: 50%;
+  box-sizing: border-box;
+  height: auto;
+  float: left;
+  padding-left: 10%;
+  padding-right: 5%;
+}
+/* line 540, ../sass/styles.scss */
+.results .left .featured {
+  width: 100%;
+  height: 500px;
+}
+/* line 545, ../sass/styles.scss */
+.results .right {
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 15%;
+  float: left;
+  margin-bottom: 50px;
+}
+/* line 551, ../sass/styles.scss */
+.results .right .postcontent {
+  width: 100%;
+  height: auto;
+}
+/* line 554, ../sass/styles.scss */
+.results .right .postcontent .content {
+  padding-top: 25px;
+}
+
+/*----------------- results page large end----------------*/
+/*----------------- news page large ----------------*/
+/* line 562, ../sass/styles.scss */
+.news {
+  width: 100%;
+  margin-top: 200px;
+  height: auto;
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  float: left;
+}
+/* line 570, ../sass/styles.scss */
+.news .left {
+  width: 50%;
+  box-sizing: border-box;
+  height: auto;
+  float: left;
+  padding-left: 10%;
+  padding-right: 5%;
+  margin-bottom: 50px;
+}
+/* line 578, ../sass/styles.scss */
+.news .left .featured {
+  width: 100%;
+  height: 500px;
+}
+/* line 583, ../sass/styles.scss */
+.news .right {
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 15%;
+  float: left;
+  margin-bottom: 50px;
+  height: 600px;
+  position: relative;
+}
+/* line 591, ../sass/styles.scss */
+.news .right .postcontent {
+  width: 100%;
+  height: auto;
+}
+/* line 594, ../sass/styles.scss */
+.news .right .postcontent .content {
+  padding-top: 50px;
+}
+
+/*----------------- news page large end ----------------*/
+/*-----------------resources page large----------------*/
+/* line 602, ../sass/styles.scss */
+.resources {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+}
+/* line 606, ../sass/styles.scss */
+.resources .leftresources {
+  width: 50%;
+  height: auto;
+  position: fixed;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-left: 10%;
+  padding-right: 5%;
+}
+/* line 615, ../sass/styles.scss */
+.resources .rightresources {
+  width: 50%;
+  box-sizing: border-box;
+  float: right;
+  height: auto;
+  min-height: 500px;
+  padding-top: 80px;
+  padding-right: 15%;
+  padding-bottom: 50px;
+}
+/* line 625, ../sass/styles.scss */
+.resources .contentresources {
+  margin-top: 50px;
+}
+
+/*-----------------resources page large end ----------------*/
+/*-----------------contact page large----------------*/
+/* line 632, ../sass/styles.scss */
+.contact {
+  height: auto;
+  width: 100%;
+  margin-top: 200px;
+}
+/* line 636, ../sass/styles.scss */
+.contact .richmond {
+  height: auto;
+  width: 100%;
+  background-color: #eff4f5;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 30%;
+  padding-right: 30%;
+  box-sizing: border-box;
+}
+/* line 645, ../sass/styles.scss */
+.contact .richmond h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* line 649, ../sass/styles.scss */
+.contact .richmond .left {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  height: auto;
+  background-color: #eff4f5;
+  padding-left: 10%;
+  margin-bottom: 50px;
+  text-align: left;
+}
+/* line 659, ../sass/styles.scss */
+.contact .richmond .right {
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 10%;
+  float: left;
+  height: auto;
+  background-color: #eff4f5;
+  margin-bottom: 50px;
+  text-align: left;
+}
+/* line 669, ../sass/styles.scss */
+.contact .richmond .contactbutton {
+  width: 100%;
+  height: 50px;
+  clear: both;
+  display: block;
+  margin: 25px auto 25px auto;
+}
+/* line 677, ../sass/styles.scss */
+.contact .map-container-richmond {
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+/* line 682, ../sass/styles.scss */
+.contact .map-container-richmond #map-canvas-richmond {
+  height: 500px;
+  width: 100%;
+}
+/* line 687, ../sass/styles.scss */
+.contact .fredericksburg {
+  height: auto;
+  width: 100%;
+  background-color: #eff4f5;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 30%;
+  padding-right: 30%;
+  box-sizing: border-box;
+}
+/* line 696, ../sass/styles.scss */
+.contact .fredericksburg h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* line 700, ../sass/styles.scss */
+.contact .fredericksburg .left {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  height: auto;
+  background-color: #eff4f5;
+  padding-left: 10%;
+  margin-bottom: 50px;
+  text-align: left;
+}
+/* line 710, ../sass/styles.scss */
+.contact .fredericksburg .right {
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 10%;
+  float: left;
+  height: auto;
+  background-color: #eff4f5;
+  margin-bottom: 50px;
+  text-align: left;
+}
+/* line 720, ../sass/styles.scss */
+.contact .fredericksburg .contactbutton {
+  width: 100%;
+  height: 50px;
+  clear: both;
+  display: block;
+  margin: 25px auto 25px auto;
+}
+/* line 728, ../sass/styles.scss */
+.contact .map-container-fredericksburg {
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+/* line 733, ../sass/styles.scss */
+.contact .map-container-fredericksburg #map-canvas-fredericksburg {
+  height: 500px;
+  width: 100%;
+}
+
+/*-----------------contact page large end ----------------*/
+/*----------------- footer large ----------------*/
+/* line 741, ../sass/styles.scss */
+.info {
+  background-color: #dbe7e9;
+  width: 100%;
+  height: 200px;
+  clear: both;
+}
+/* line 746, ../sass/styles.scss */
+.info .bottomlogo {
+  height: 50px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /*
+  	  background-image: url(images/logo-partial.svg);
+  	  background-size: contain;
+  	  background-repeat: no-repeat;
+  */
+}
+/* line 756, ../sass/styles.scss */
+.info .bottomlogo h1 {
+  line-height: 100px;
+  text-align: center;
+}
+/* line 761, ../sass/styles.scss */
+.info .bottomphonenumbers {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  text-align: center;
+  display: block;
+  
+}
+/* line 769, ../sass/styles.scss */
+.info .bottomphonenumbers h1 {
+  color: #282d52;
+  line-height: 40px;
+  padding-top: 80px;
+}
+
+/* line 775, ../sass/styles.scss */
+.foot .copyright {
+  height: auto;
+  width: 100%;
+  display: block;
+  clear: both;
+  text-align: center;
+  background-color: #282d52;
+}
+/* line 782, ../sass/styles.scss */
+.foot .copyright h1 {
+  line-height: 40px !important;
+  font-size: 12px !important;
+  font-family: "brandon-grotesque", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  
+}
+
+/* line 791, ../sass/styles.scss */
+.stafflinks {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.stafflinks a{
+  font-size: 20px;
+  font-family: "lexia",serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #282D52;
+  padding-left: 25px;
+  line-height: 35px;
+ }
+
+
+ @media (min-width: 960px) {
+ 
+ 
+.nav2,
+ .nav-container,
+ .nav-container.is-visible {
+  position: static;
+  top: auto;
+  left: auto;
+  z-index: auto;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+ 
+.nav-container,
+ .nav-container.is-visible {
+  visibility: visible;
+  height: auto;
+  min-height: 0;
+  overflow-y: visible;
+}
+ 
+.nav-toggle { display: none; }
+ 
+.nav-menu > .menu-item,
+ .nav-menu > .menu-item.is-active {
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+}
+ 
+.nav-menu > .menu-item:last-child { border: 0; }
+ 
+.nav-menu .menu-item {
+  -webkit-transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+ 
+.has-dropdown:after { content: "" !important; }
+ 
+.nav-menu > .has-dropdown:after {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  width: 0;
+  height: 0;
+  margin-top: -2px;
+  margin-left: -4px;
+  content: "";
+  border-width: 5px 5px 0 5px;
+  border-style: solid;
+  border-color: #444 transparent transparent transparent;
+}
+ 
+.has-dropdown > .menu-link { padding-right: 2rem; }
+ 
+.nav-dropdown {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  width: 200px;
+  margin: 0;
+  padding: 0.5rem 0;
+  background-color: #dedede;
+  box-shadow: 0 0 4px hsla(0, 0%, 0%, 0.15);
+  visibility: hidden;
+  -webkit-transition: visibility 0s linear 0.25s, opacity 0.25s linear;
+  transition: visibility 0s linear 0.25s, opacity 0.25s linear;
+}
+ 
+.has-dropdown:hover > .nav-dropdown {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+ 
+.nav-dropdown .menu-item { border: 0; }
+ 
+.nav-dropdown .menu-item:hover,
+ .nav-dropdown .nav-dropdown .menu-item:hover { background-color: #d0d0d0; }
+ 
+.nav-dropdown .nav-dropdown,
+ .nav-dropdown .nav-dropdown .menu-item { background-color: #dedede; }
+ 
+.nav-dropdown .nav-dropdown {
+  z-index: 9998;
+  top: 0;
+  left: 100%;
+}
+ 
+.content { margin-top: 0; }
+}
+
+
+/* Mobile Menu X button */
+
+.menu-btn span, .menu-btn span:before, .menu-btn span:after {
+cursor: pointer;
+border-radius: 1px;
+height: 5px;
+width: 35px;
+background: #808080;
+position: absolute;
+display: block;
+content: '';
+z-index: 9999;
+}
+
+.menu-btn span:before {
+top: -10px;
+}
+.menu-btn span:after {
+bottom: -10px;
+
+
+}
+
+.menu-btn span, .menu-btn span:before, .menu-btn span:after {
+transition: all 500ms ease-in-out;
+-webkit-transition: all 500ms ease-in-out;
+}
+.menu-btn.active span {
+background-color: transparent;
+}
+.menu-btn.active span:before, .menu-btn.active span:after {
+top: 0;
+}
+.menu-btn.active span:before {
+transform: rotate(45deg);
+background: #282d52;
+-webkit-transition: background-color 45deg rotate 1s;
+-moz-transition: background-color 45deg rotate 1s;
+-o-transition: background-color 45deg rotate 1s;
+}
+.menu-btn.active span:after {
+transform: rotate(-45deg);
+background: #282d52;
+-webkit-transition: background-color -45deg rotate 1s;
+-moz-transition: background-color -45deg rotate 1s;
+-o-transition: background-color -45deg rotate 1s;
+
+
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+a {
+    font-size: 18px;
+
+}
+
+}
+
+
+/*Ipads (portrait)*/
+@media only screen and (min-width: 1300px) {
+
+.doublewrap .double #portrait .featured {
+	
+	    height: 500px;
+	
+}
+
+}
+
+/*Ipads (portrait)*/
+@media only screen and (min-width: 1700px) {
+
+.doublewrap .double #portrait .featured {
+	
+	    height: 700px;
+	
+}
+
+}
+
+/*Ipads (portrait)*/
+@media only screen and (min-width: 1800px) {
+
+.doublewrap .double #portrait .featured {
+	
+	    height: 800px;
+	
+}
+
+}
+
+
+/*Ipads (portrait)*/
+@media only screen and (max-width: 1024px) {
+
+	nav .navcenter .navrightlist ul li a {
+	font-size: 15px;
+	margin-left: 25px;
+
+
+	}
+
+
+	nav .navcenter .navrightcontact .spanish {
+    	font-size: 16px;
+    	margin-top: 57px;
+	}
+
+
+		
+}
+
+/*Ipads (portrait)*/
+@media only screen and (max-width: 768px) {
+
+	
+	.doublewrap .topimageteam {
+	    margin-top: -30px;
+	}
+
+
+	.doublewrap {
+   		 margin-top: -25px !important;
+	}
+
+
+	.navrightlist {
+		display: none;
+	}
+		
+
+	.mobile-nav {
+		display: block !important;
+	
+	}
+	
+
+		
+
+.contact {
+    height: auto;
+    width: 100%;
+    margin-top: -5px;
+}
+
+.areasofpractice .areasofpracticetitle {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    color: #808080;
+}
+
+
+.areasofpractice .workerscompensation {
+    background-image: url('images/hat-blue.svg');
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 55%;
+    box-sizing: border-box;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: #282D52;
+    margin-bottom: 70px;
+}
+
+.areasofpractice .personalinjury {
+    background-image: url('images/car-blue.svg');
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 55%;
+    box-sizing: border-box;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 70px;
+    color: #282D52;
+}
+
+.areasofpractice .disability {
+    background-image: url('images/walker-blue.svg');
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 55%;
+    box-sizing: border-box;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: #282D52;
+    margin-bottom: 50px;
+}
+
+nav {
+      height: 200px;
+	  position: relative;
+	  top: -5px;
+}
+
+
+
+nav .navcenter .navleft {
+	width: 100%;
+	float: none;
+	
+	
+}
+
+.menu-btn {
+    float: right;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.responsive-menu {
+	margin-top: -215px;
+
+}
+
+
+
+nav .navcenter .navrightcontact {
+    display: none;
+}
+
+nav .navcenter .navrightcontact .spanish {
+	margin-top: 22px;
+	
+	
+}
+nav .navcenter .navrightcontact .facebook {
+	margin-top: 15px;
+	
+	
+}
+.doublewrap .double #portrait .featured {
+	
+	    height: 600px;
+	
+}
+
+
+.doublewrap .double #portrait {
+width: 100%;
+float: left;
+padding-right: 5%;
+}
+
+.doublewrap .double .right .postcontent {
+width: 100%;
+height: auto;
+text-align: center;
+}
+
+
+
+
+
+.info .bottomphonenumbers h1 {
+padding-top: 50px;
+}
+
+
+
+#textfrontpage {
+    width: 100%;
+    font-size: 21px !important;
+
+			
+}
+
+.doublewrap .double .right {
+    width: 100%;
+    float: none;
+
+}
+
+
+.doublewrap .double .left {
+    width: 100%;
+    float: none;
+}
+
+.contact .richmond .left {
+width: 100%;
+box-sizing: border-box;
+float: none;
+height: auto;
+background-color: #eff4f5;
+padding-left: 10%;
+margin-bottom: 50px;
+text-align: left;
+}
+
+
+.contact .richmond .right {
+width: 100%;
+box-sizing: border-box;
+padding-left: 10%;
+float: none;
+height: auto;
+background-color: #eff4f5;
+margin-bottom: 50px;
+text-align: left;
+}
+
+
+
+
+.contact .fredericksburg .left {
+width: 100%;
+box-sizing: border-box;
+float: none;
+height: auto;
+background-color: #eff4f5;
+padding-left: 10%;
+margin-bottom: 50px;
+text-align: left;
+
+
+}
+
+.contact .fredericksburg .right {
+width: 100%;
+box-sizing: border-box;
+padding-left: 10%;
+float: none;
+height: auto;
+background-color: #eff4f5;
+margin-bottom: 50px;
+text-align: left;
+
+}
+
+#button {
+	font-size: 14px;
+
+
+}
+
+.contact .fredericksburg {
+    padding: 40px 20%;
+ 
+}
+
+.contact .richmond {
+    padding: 40px 20%;
+}
+
+
+}
+/*Ipads (portrait)*/
+@media only screen and (max-width: 730px) {
+
+
+
+.mobile-nav {
+    margin-top: -20px;
+
+    
+}
+
+
+
+}
+
+/*Iphone (portrait)*/
+@media only screen and (max-width: 420px) {
+
+
+
+.contact .fredericksburg {
+    padding: 30px 10%;
+ 
+}
+
+.contact .richmond {
+    padding: 30px 10%;
+}
+
+nav .navcenter .navrightcontact .spanish {
+    font-size: 13px;
+
+
+}
+
+
+nav .navcenter .navrightcontact {
+    width: 100%;
+    float: none;
+    margin-top: -25px;
+    height: 50px;
+}
+
+
+
+nav .navcenter .navrightlist {
+    width: 100%;
+    float: none;
+    height: 50px;
+}
+
+
+.mobile-nav {
+    width: 100%;
+    margin-top: 20px;
+    float: left;
+  
+}
+
+
+#textfrontpage {
+    font-size: 18px !important;
+
+}
+
+.doublewrap .double #portrait .featured {
+	
+	    height: 500px;
+	
+}
+
+
+
+}
+
+

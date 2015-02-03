@@ -1,0 +1,791 @@
+/* -- CSS RESET -- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+background-image: url("images/paper.png");
+background-repeat: repeat;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+/*----------------------------------variables---------------------------------*/
+$navy:#282d52;
+$lightnavy:#4c567a;
+$darkblue: #ccdee1;
+$mediumblue: #dbe7e9;
+$lightblue:#eff4f5;
+$lightestblue:#f3f6f7;
+$textgrey: #808080;
+$white: #ffffff;
+$red:#bd1e2c;
+$darkgrey: #000000;
+$sans: "brandon-grotesque",sans-serif;
+$slab:"lexia",serif;
+/*----------------------------------variables---------------------------------*/
+/*----------------------------------miscellaneous---------------------------------*/
+h1{
+	font-size:20px;
+	line-height:26px;
+	font-family:$slab;
+	font-weight:400;
+	color:$textgrey;
+}
+h2{
+	font-size:18px;
+	line-height:26px;
+	font-family:$sans;
+	font-weight:400;
+	color:$textgrey;
+	text-transform:uppercase;
+}
+#button{
+	width: 100%;
+	margin-top: 10px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: $navy;
+	text-decoration: none;
+	display: block;
+	color: white;
+	font-size:18px;
+	font-family:$slab;
+	font-weight:400;
+	text-style:italic;
+	&:hover{
+		background-color:$lightnavy;
+	}
+}
+a{
+	font-size:20px;
+	font-family:$slab;
+	font-weight:400;
+	text-decoration:none;
+	color:$navy;
+	}
+p{
+	font-size:18px;
+	line-height:30px;
+	font-family:$slab;
+	font-weight:300;
+	color:$textgrey;
+}
+hr{
+	height:2px;
+	width:100%;
+	background-color:$darkblue;
+	border:none;
+	display:block;
+	clear:both;
+}
+
+/*----------------------------------miscellaneous end---------------------------------*/
+/*-----------------large nav large----------------*/
+nav{
+	width:100%;
+	height:200px;
+    background-color:$mediumblue;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    .navcenter{
+	    width:1200px;
+	    height:200px;
+	    margin:0 auto 0 auto;
+	    box-sizing:border-box;
+	    .navleft{
+		    width:350px;
+		    height:200px;
+		    float:left;
+			background-image:url(images/logo.svg);
+			background-size: auto 160px;
+			background-repeat:no-repeat;
+			background-position:0 center;
+			&:hover{
+				background-image:url(images/logo-hover.svg);
+			}
+			a{
+				width:350px;
+				height:200px;
+				display:block;
+			}
+		}
+		.navrightcontact{
+		    width:850px;
+		    height:100px;
+		    float:left;
+		    .contact{
+			    float:right;
+			    margin-left:10px;
+			    margin-top:50px;
+			    height:40px;
+			    width:40px;
+			    background-image:url('images/contact-hover.svg') no-repeat center center cover;
+			    background-repeat:no-repeat;
+			    background-position: center center;
+			    background-size:cover;
+			    &:hover{ 
+					 background-image:url('images/contact.svg');
+			    }
+		    }
+		    .facebook{
+			    float:right;
+			    margin-left:10px;
+			    margin-top:50px;
+			    height:40px;
+			    width:40px;			    
+			    background-image:url('images/circle-fb-hover.svg');
+			    background-repeat:no-repeat;
+			    background-position: center center;
+			    background-size:cover;
+			    &:hover{
+					 background-image:url('images/circle-fb.svg');
+			    }
+		    }
+		    .spanish{
+			    color:$textgrey;
+			    float:right;
+			    margin-top:60px;
+			    margin-right:15px;
+		    }
+		}
+		.navrightlist{
+		    width:850px;
+		    height:100px;
+		    margin:0;
+		    box-sizing: border-box;
+		    float:left;
+			ul{
+			    list-style-type: none;
+			    float:right;
+			    display:block;
+				li{
+					float:left;
+					ul{display:none;}
+					&:hover ul {
+						list-style-type: none;
+						float: none;
+						display: block;
+						position: absolute;
+						top: 200px;
+						width: 250px;
+						height: auto;
+						background-color: #f3f6f7;
+						padding-bottom: 20px;
+						padding-top: 20px;
+						box-sizing: border-box;
+						li a {
+							text-decoration: none;
+							display: block;
+							line-height: 40px;
+							color: #282d52;
+							text-align: left;
+							width:250px;
+							
+							&:hover {
+								color: #4c567a;
+							}
+						}
+					}
+					a{
+						  text-decoration: none;
+						  margin-left: 40px;
+						  display: block;
+						  line-height: 100px;
+						  text-align: right;
+						  color: #282d52;
+						 &:hover{
+							 color:$lightnavy;
+						 }
+					}
+				}
+			}	
+		}
+	}	
+}
+.mediumnav{
+	display:none;
+}
+/*-----------------large nav end large----------------*/
+/*----------------- index page large----------------*/
+.ms-bullet{
+	height:12px !important;
+	width:12px !important;
+	background-image:none !important;
+	background-color:white !important;
+	border-radius:6px !important;
+	margin-bottom:0px !important;
+	margin-top:0px !important;
+}
+.ms-bullet-selected{
+	height:12px !important;
+	width:12px !important;
+	background-image:none !important;
+	background-color: $navy !important;
+	border-radius:6px !important;
+	margin-bottom:0px !important; 
+	margin-top:0px !important;
+}
+
+#textfrontpage{
+	text-align:center;
+	margin-top:50% !important;
+	width:700px;
+	height:300px;
+	margin-left:18% !important;
+	font-size:24px !important;
+	line-height:30px !important;
+	font-family:$slab !important;
+	font-weight:400 !important;
+	color:$textgrey !important;
+}
+
+.front{
+	height:100vh;
+	width:100%;
+	display:block;
+}
+.bigphoto {
+  margin-top:200px;
+  width: 100%;
+  height: calc(100vh - 200px);
+  background-image: url(images/construction-lighter.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: left;
+	.textoverlay {
+	  margin: 15% auto 0 auto;
+	  height: 300px;
+	  width: 600px;
+	}
+	.text {
+	  text-align: center;
+	  width: 90%;
+	  margin-left: 5%;
+	  margin-right: 5%;
+	  height: auto;
+	 h1{
+	  color:$white !important;}
+	}
+}
+/*----------------- index page end large ----------------*/
+/*----------------- about page large ----------------*/
+	.areasofpractice {
+	  /* background-color: $lightblue; */
+	  width: 1200px;
+	  margin:50px auto 100px auto;
+	  height: 450px;
+	  box-sizing: border-box;
+	  clear: both;
+	  .areasofpracticetitle {
+		  text-align: center;
+		  margin-bottom: 100px;
+		  margin-top: 50px;
+		  width: 100%;
+		  height: auto;
+		  color:$textgrey;
+		}
+	  .workerscompensation {
+		  background-image: url(images/hat-blue.svg);
+		  background-position: center 0;
+		  background-repeat: no-repeat;
+		  background-size: contain;
+		  height: 350px;
+		  width: 200px;
+		  float: left;
+		  text-align: center;
+		  text-decoration: none;
+		  padding-top: 230px;
+		  box-sizing: border-box;
+		  margin-left: 166px;
+		  margin-right: 66px;
+		  color:$navy;
+		  h2{ color:$navy;
+		  	  &:hover{
+				  color:$textgrey;}
+	      }
+	  	  &:hover{
+			  color:$textgrey;
+			  background-image: url(images/hat-blue-hover.svg);
+			  background-position: center 0;
+			  background-repeat: no-repeat;
+			  background-size: contain;
+			}
+		}
+		.disability {
+		  background-image: url(images/walker-blue.svg);
+		  background-position: center 0;
+		  background-repeat: no-repeat;
+		  background-size: contain;
+		  height: 350px;
+		  width: 200px;
+		  float: left;
+		  text-align: center;
+		  text-decoration: none;
+		  padding-top: 230px;
+		  box-sizing: border-box;
+		  margin-left: 66px;
+		  margin-right: 166px;
+		  color:$navy;
+		   h2{ color:$navy;
+		  	  &:hover{
+				  color:$textgrey;}
+	      }
+	  	  &:hover{
+			  color:$textgrey;		  
+			  background-image: url(images/walker-blue-hover.svg);
+			  background-position: center 0;
+			  background-repeat: no-repeat;
+			  background-size: contain;
+			}
+		}
+		.personalinjury {
+		  background-image: url(images/car-blue.svg);
+		  background-position: center 0;
+		  background-repeat: no-repeat;
+		  background-size: contain;
+		  height: 350px;
+		  width: 200px;
+		  float: left;
+		  text-align: center;
+		  text-decoration: none;
+		  padding-top: 230px;
+		  box-sizing: border-box;
+		  margin-left: 66px;
+		  margin-right: 66px;
+		  color:$navy;
+		   h2{ color:$navy;
+		  	  &:hover{
+				  color:$textgrey;}
+	      }
+	  	  &:hover{
+			  color:$textgrey;
+			  background-image: url(images/car-blue-hover.svg);
+			  background-position: center 0;
+			  background-repeat: no-repeat;
+			  background-size: contain;
+			}
+		}
+}
+/*----------------- about page large end ----------------*/
+/*----------------- team page large ----------------*/
+.doublewrap {
+	margin-top:200px;
+	height: auto;
+	width: 100%;
+	display: block;
+	.topimageteam {
+		height: calc(60vh);
+		width: 100%;
+		background-image: url("images/lawyers.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		float: left;
+		display: block;
+	}
+	.double {
+		width: 1200px;
+		margin: 0 auto 0 auto;
+		height: auto;
+		padding-bottom: 50px;
+		box-sizing: border-box;
+		#portrait{
+			width: 50%;
+			margin-top:50px;
+			box-sizing: border-box;
+			height: auto;
+			float: left;
+			padding-right: 10%;
+			padding-left: 5%;
+			margin-bottom: 50px;
+			.featured {
+				width: 100%;
+				height: 400px;
+				}	
+			}
+		.left {
+			width: 50%;
+			margin-top:50px;
+			box-sizing: border-box;
+			height: auto;
+			float: left;
+			padding-right: 5%;
+			margin-bottom: 50px;
+			.featured {
+				width: 100%;
+				height: 500px;
+			}
+		}
+		.right {
+			width: 50%;
+			margin-top:50px;
+			box-sizing: border-box;
+			float: left;
+			margin-bottom: 50px;
+			.postcontent {
+				width: 100%;
+				height: auto;
+				.content {
+					padding-top: 25px;
+				}
+			}
+		}
+	}
+}
+.disclaimerwrap{
+  background-color: $lightblue;
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  clear: both;
+  .disclaimer{
+	  width:1200px;
+	  height:auto;
+	  margin-left:auto;
+	  margin-right:auto;
+  }
+}
+.offices {
+margin-top:200px;
+height: auto;
+width: 100%;
+background-color: #f3f6f7;
+display: block;
+float: left;
+padding-top: 50px;
+padding-bottom: 50px;
+	.officestitle {
+		padding-bottom: 50px;
+	}
+	.fredericksburg {
+		padding-right: 10%;
+		width: 50%;
+		box-sizing: border-box;
+		height: auto;
+		float: left;
+	}
+	.richmond {
+		padding-left: 10%;
+		width: 50%;
+		box-sizing: border-box;
+		height: auto;
+		float: left;
+	}
+}
+/*----------------- team page large end ----------------*/
+/*----------------- results page large ----------------*/
+#resourcesleft{
+	width:50%;
+	padding-right:10%;
+	box-sizing:border-box;
+}
+.results {
+	width: 100%;
+	margin-top:200px;
+	height: auto;
+	background-color: white;
+	padding-top: 50px;
+	float: left;
+	.left {
+		width: 50%;
+		box-sizing: border-box;
+		height: auto;
+		float: left;
+		padding-left: 10%;
+		padding-right: 5%;
+		.featured {
+		  width: 100%;
+		  height: 500px;
+		}
+	}
+	.right {
+		width: 50%;
+		box-sizing: border-box;
+		padding-right: 15%;
+		float: left;
+		margin-bottom: 50px;
+		.postcontent {
+			  width: 100%;
+			  height: auto;
+			.content {
+			  padding-top: 25px;
+			}
+		}
+	}
+}
+/*----------------- results page large end----------------*/
+/*----------------- news page large ----------------*/
+.news {
+	width: 100%;
+	margin-top:200px;
+	height: auto;
+	background-color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	float: left;
+	.left {
+		width: 50%;
+		box-sizing: border-box;
+		height: auto;
+		float: left;
+		padding-left: 10%;
+		padding-right: 5%;
+		margin-bottom: 50px;
+		.featured {
+			width: 100%;
+			height: 500px;
+		}
+	}
+	.right {
+	  width: 50%;
+	  box-sizing: border-box;
+	  padding-right: 15%;
+	  float: left;
+	  margin-bottom: 50px;
+	  height: 600px;
+	  position: relative;
+		.postcontent {
+		  width: 100%;
+		  height: auto;
+			.content {
+			  padding-top: 50px;
+			}
+		}
+	}
+}
+/*----------------- news page large end ----------------*/
+/*-----------------resources page large----------------*/
+.resources {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+	.leftresources {
+	  width: 50%;
+	  height: auto;
+	  position: fixed;
+	  box-sizing: border-box;
+	  padding-top: 50px;
+	  padding-left: 10%;
+	  padding-right: 5%;
+	}
+	.rightresources {
+	  width: 50%;
+	  box-sizing: border-box;
+	  float: right;
+	  height: auto;
+	  min-height: 500px;
+	  padding-top: 80px;
+	  padding-right: 15%;
+	  padding-bottom: 50px;
+	}
+	.contentresources {
+		 margin-top: 50px;
+	}
+}
+
+/*-----------------resources page large end ----------------*/
+/*-----------------contact page large----------------*/
+.contact {
+	height: auto;
+	width: 100%;
+	margin-top:200px;
+	.richmond {
+		height: auto;
+		width: 100%;
+		background-color: #eff4f5;
+		padding-bottom: 50px;
+		padding-top: 50px;
+		padding-left: 30%;
+		padding-right: 30%;
+		box-sizing: border-box;
+		h1{
+			text-align: center;
+			margin-bottom:50px;
+		}
+		.left {
+			width: 50%;
+			box-sizing: border-box;
+			float: left;
+			height: auto;
+			background-color: #eff4f5;
+			padding-left: 10%;
+			margin-bottom: 50px;
+			text-align:left;
+		}
+		.right {
+			width: 50%;
+			box-sizing: border-box;
+			padding-left: 10%;
+			float: left;
+			height: auto;
+			background-color: #eff4f5;
+			margin-bottom: 50px;
+			text-align:left;
+		}
+		.contactbutton{
+			width:300px;
+			height:50px;
+			clear:both;
+			display:block;
+			margin:25px auto 25px auto;
+		}
+	}
+	.map-container-richmond {
+	  width: 100%;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+		#map-canvas-richmond {
+		  height: 500px;
+		  width: 100%;
+		}
+	}
+	.fredericksburg {
+		height: auto;
+		width: 100%;
+		background-color: #eff4f5;
+		padding-bottom: 50px;
+		padding-top: 50px;
+		padding-left: 30%;
+		padding-right: 30%;
+		box-sizing: border-box;
+		h1{
+			text-align: center;
+			margin-bottom:50px;
+		}		
+		.left {
+			width: 50%;
+			box-sizing: border-box;
+			float: left;
+			height: auto;
+			background-color: #eff4f5;
+			padding-left: 10%;
+			margin-bottom: 50px;
+			text-align:left;
+		}
+		.right {
+		  width: 50%;
+		  box-sizing: border-box;
+		  padding-left: 10%;
+		  float: left;
+		  height: auto;
+		  background-color: #eff4f5;
+		  margin-bottom: 50px;
+		  text-align:left;
+		}
+		.contactbutton{
+			width:300px;
+			height:50px;
+			clear:both;
+			display:block;
+			margin:25px auto 25px auto;
+		}
+	}
+	.map-container-fredericksburg {
+	  width: 100%;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+		#map-canvas-fredericksburg {
+		  height: 500px;
+		  width: 100%;
+		}
+	}
+}
+/*-----------------contact page large end ----------------*/
+/*----------------- footer large ----------------*/
+.info {
+  background-color: $mediumblue;
+  width: 100%;
+  height: 200px;
+  clear: both;
+  .bottomlogo {
+	  height: 50px;
+	  width: 100%;
+	  margin-left:auto;
+	  margin-right:auto;
+/*
+	  background-image: url(images/logo-partial.svg);
+	  background-size: contain;
+	  background-repeat: no-repeat;
+*/
+	  h1{
+		  line-height:100px;
+		  text-align:center;
+	  }
+	}
+	.bottomphonenumbers{
+	  background-color: $mediumblue;
+	  width: 100%;
+	  height: 200px;
+	  clear: both;
+	  text-align: center;
+	  height: 100px;
+	  display:block;
+	  h1{
+		  color:$navy;
+		  line-height:200px;
+	  }
+	}
+}
+.foot .copyright {
+  height: 40px;
+  width: 100%;
+  display: block;
+  clear: both;
+  text-align: center;
+  background-color: $navy;
+  h1{
+	  line-height:40px !important;
+	  font-size:12px !important;
+	  font-family:$sans;
+	  text-transform:uppercase;
+	  letter-spacing:1px;  
+	  color:$white;
+  }
+}
+
